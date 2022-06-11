@@ -13,6 +13,9 @@
 		CD336051283FE61C00C0926E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD336050283FE61C00C0926E /* Assets.xcassets */; };
 		CD336054283FE61C00C0926E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD336052283FE61C00C0926E /* LaunchScreen.storyboard */; };
 		CD336061285386EE00C0926E /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD336060285386EE00C0926E /* CharacterTableViewController.swift */; };
+		CD33606328538F4C00C0926E /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33606228538F4C00C0926E /* CharacterDetailViewController.swift */; };
+		CD33606528538F8300C0926E /* RickAndMorty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33606428538F8300C0926E /* RickAndMorty.swift */; };
+		CD33606928538FBF00C0926E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33606828538FBF00C0926E /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CD336053283FE61C00C0926E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD336055283FE61C00C0926E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD336060285386EE00C0926E /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
+		CD33606228538F4C00C0926E /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		CD33606428538F8300C0926E /* RickAndMorty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMorty.swift; sourceTree = "<group>"; };
+		CD33606828538FBF00C0926E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,9 @@
 		CD336046283FE61B00C0926E /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				CD33606628538F8B00C0926E /* Models */,
 				CD33605C283FE67700C0926E /* ViewControllers */,
+				CD33606728538F9E00C0926E /* Services */,
 				CD33605D283FE6B100C0926E /* Storyboards */,
 				CD33605E283FE6D400C0926E /* Sourse */,
 				CD33605B283FE67100C0926E /* App */,
@@ -78,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				CD336060285386EE00C0926E /* CharacterTableViewController.swift */,
+				CD33606228538F4C00C0926E /* CharacterDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -97,6 +106,22 @@
 				CD336050283FE61C00C0926E /* Assets.xcassets */,
 			);
 			path = Sourse;
+			sourceTree = "<group>";
+		};
+		CD33606628538F8B00C0926E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD33606428538F8300C0926E /* RickAndMorty.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD33606728538F9E00C0926E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD33606828538FBF00C0926E /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD33606928538FBF00C0926E /* NetworkManager.swift in Sources */,
 				CD336048283FE61B00C0926E /* AppDelegate.swift in Sources */,
+				CD33606328538F4C00C0926E /* CharacterDetailViewController.swift in Sources */,
 				CD336061285386EE00C0926E /* CharacterTableViewController.swift in Sources */,
+				CD33606528538F8300C0926E /* RickAndMorty.swift in Sources */,
 				CD33604A283FE61B00C0926E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

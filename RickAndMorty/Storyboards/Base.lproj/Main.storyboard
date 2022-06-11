@@ -72,13 +72,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAj-51-V3Z">
-                                <rect key="frame" x="87" y="140" width="240" height="197"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAj-51-V3Z">
+                                <rect key="frame" x="80" y="170" width="254" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="YpM-oa-qSE"/>
+                                    <constraint firstAttribute="width" constant="254" id="iBZ-VF-ygB"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvZ-BL-AEF">
+                                <rect key="frame" x="30" y="397" width="354" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hkc-Vb-9wn"/>
                         <color key="backgroundColor" red="0.17622343539999999" green="0.39034880049999998" blue="0.13368631070000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="PAj-51-V3Z" firstAttribute="top" secondItem="hkc-Vb-9wn" secondAttribute="top" constant="30" id="15t-zA-kaJ"/>
+                            <constraint firstItem="EvZ-BL-AEF" firstAttribute="top" secondItem="PAj-51-V3Z" secondAttribute="bottom" constant="30" id="TXS-Wq-bjz"/>
+                            <constraint firstItem="PAj-51-V3Z" firstAttribute="centerX" secondItem="ZCH-lZ-15x" secondAttribute="centerX" id="ez6-Qk-mVt"/>
+                            <constraint firstItem="hkc-Vb-9wn" firstAttribute="trailing" secondItem="EvZ-BL-AEF" secondAttribute="trailing" constant="30" id="mUR-cM-w3E"/>
+                            <constraint firstItem="EvZ-BL-AEF" firstAttribute="leading" secondItem="hkc-Vb-9wn" secondAttribute="leading" constant="30" id="rP6-cd-wte"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eGz-ve-xqg"/>
                 </viewController>
