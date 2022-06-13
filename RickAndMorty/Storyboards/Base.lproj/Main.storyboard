@@ -58,7 +58,10 @@
                             <outlet property="delegate" destination="QAb-l1-BpG" id="Ne1-Qi-Xfp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rra-wd-clc"/>
+                    <navigationItem key="navigationItem" id="rra-wd-clc">
+                        <barButtonItem key="leftBarButtonItem" title="Prev" id="92L-Ag-bKI"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="6Z5-Q5-Sg0"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gAs-9v-krV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
