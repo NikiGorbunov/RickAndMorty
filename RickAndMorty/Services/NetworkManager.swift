@@ -8,18 +8,13 @@
 import Foundation
 import Alamofire
 
-enum NetworkError: Error {
-    case invalidUrl
-    case noData
-    case decodingError
-}
 
 class NetworkManager {
     //Singelton
     static let shared = NetworkManager()
     private init() {}
     
-    func fetchData(url: String, completion: @escaping (Result<RickAndMorty, NetworkManager>) -> Void) {
+    func fetchData(url: String, completion: @escaping (Result<RickAndMorty, Error>) -> Void) {
         AF.request(url)
             .validate()
     }
