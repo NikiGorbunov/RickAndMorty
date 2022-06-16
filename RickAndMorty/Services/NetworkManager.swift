@@ -42,7 +42,6 @@ class APIManager: APIManagerProtocol {
         }
     }
     
-    
     func getImage(_ url: URL, completion: @escaping (UIImage?) -> Void) {
         AF.request(url, method: .get).responseImage { response in
             switch response.result {
